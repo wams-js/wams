@@ -1,4 +1,4 @@
-# WAMS (Workspaces Across Multiple Services) API
+# WAMS (Workspaces Across Multiple Surfaces) API
 
 The current repository is located at https://github.com/hcilab/wams, which is in active development and is being prepared to move to its permanent home in this repository. 
 
