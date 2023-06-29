@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+canvas#wams {
+  display: block;
+}
+
+.wams-element {
+  align-content: stretch;
+  align-items: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  transform-origin: top left;
+}
+
+.wams-element > * {
+  flex-grow: 1;
+}

@@ -1,0 +1,12 @@
+node_modules/
+*.bak
+*.sw[op]
+custom.css
+*.pdf
+data/
+graphs/*.sh
+
+coverage
+tags
+.cache
+.parcel-cache
