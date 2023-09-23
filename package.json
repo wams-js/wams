@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hcilab/wams"
+    "url": "https://github.com/wams-js/wams"
   },
   "scripts": {
     "build": "parcel build",
