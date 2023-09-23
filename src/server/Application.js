@@ -64,7 +64,7 @@ class Application {
      * Socket.io namespace in which to operate.
      *
      * @type {Namespace}
-     * @see {@link https://socket.io/docs/server-api/}
+     * @see {@link https://socket.io/docs/v4/server-api/}
      */
     this.namespace = this.ioServer.of(constants.NS_WAMS);
 
