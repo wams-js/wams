@@ -69,7 +69,7 @@
 
     <section class="readme usertext">
         <article><h1 id="wams%3A-workspaces-across-multiple-surfaces">WAMS: Workspaces Across Multiple Surfaces</h1>
-<p><a href="https://codeclimate.com/github/hcilab/wams/maintainability"><img src="https://api.codeclimate.com/v1/badges/025f89d6de0c6677d142/maintainability" alt="Maintainability"></a></p>
+<p><a href="https://codeclimate.com/github/wams-js/wams/maintainability"><img src="https://api.codeclimate.com/v1/badges/025f89d6de0c6677d142/maintainability" alt="Maintainability"></a></p>
 <p>WAMS is a Web API that makes creating Multi-Screen applications easy. Multi-screen applications are ones where multiple devices (and their screens) can be used together in flexible ways allowing objects to be easily moved between screens or interactions, like gestures, to span multiple screens.</p>
 <p>WAMS abstracts away socket connections with clients as well as the model, interaction, and coordination logic, providing a simple, unified framework that allows focus to be placed on creating and defining new interactions rather than on pre-requisite communication code. It comes packaged with default server logic and HTML files so you can easily build canvas-first shared workspace applications, or you can provide your own server routines, allowing you to integrate WAMS into your existing web application!</p>
 <p>We use browser windows to represent screens because browsers are extremely flexible - they are cross-platform, already available on multiple devices and can fill screens (or be used to subdivide screens).</p>
@@ -119,10 +119,10 @@
 <h2 id="installation">Installation</h2>
 <p>You will need to install <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">node.js and npm</a>.</p>
 <p>Then you can install this repo directly as a node module. For example, to install the stable <code>hello-world-test</code> release:</p>
-<pre class="prettyprint source lang-bash"><code>npm install hcilab/wams#hello-world-test
+<pre class="prettyprint source lang-bash"><code>npm install wams-js/wams#hello-world-test
 </code></pre>
 <h2 id="getting-started">Getting started</h2>
-<p>The easiest way to get started is to follow the <a href="#walkthrough">Walkthrough</a> tutorial below. More advanced users might want to check the <a href="https://hcilab.github.io/wams/">code documentation</a> and the <a href="#examples">examples</a>. ~For a taste on how WAMS works, check the <a href="#live-demo">live demo section</a>.~ (The live demo is currently broken).</p>
+<p>The easiest way to get started is to follow the <a href="#walkthrough">Walkthrough</a> tutorial below. More advanced users might want to check the <a href="https://wams-js.github.io/wams/">code documentation</a> and the <a href="#examples">examples</a>. ~For a taste on how WAMS works, check the <a href="#live-demo">live demo section</a>.~ (The live demo is currently broken).</p>
 <h2 id="examples">Examples</h2>
 <p>To try out the examples, go to <code>examples/</code> and run as follows:</p>
 <pre class="prettyprint source lang-bash"><code>node examples/[EXAMPLE_FILENAME]
@@ -130,14 +130,8 @@
 <p>For example:</p>
 <pre class="prettyprint source lang-bash"><code>node examples/polygons.js
 </code></pre>
-<h2 id="live-demo">Live Demo</h2>
-<ul>
-<li>(Currently broken)</li>
-</ul>
-<p>The <a href="https://wams-player-demo.herokuapp.com/">live demo</a> is an example of a video-player with a distributed user interface. First, the player controls are displayed on the screen with the video. Go to the url with a second device or browser, and as a second view is connected, the controls are automatically moved to that view.</p>
-<p>To check out the code of the live demo, see <code>examples/video-player.js</code></p>
 <h2 id="walkthrough">Walkthrough</h2>
-<p>This walkthrough is a friendly guide on how to use most WAMS features. For more details, see <a href="https://hcilab.github.io/wams/">code documentation</a>.</p>
+<p>This walkthrough is a friendly guide on how to use most WAMS features. For more details, see <a href="https://wams-js.github.io/wams/">code documentation</a>.</p>
 <blockquote>
 <p><strong>Note</strong> The examples on this page use ES2015 (ES6) JavaScript syntax like <code>const</code> variables and object destructuring. If you are not familiar with ES2015 features, you can <a href="https://webapplog.com/es6/">read</a> about them first.</p>
 </blockquote>
@@ -145,7 +139,7 @@
 <p>First, let's set up a new directory for our demo application, and install WAMS into it:</p>
 <pre class="prettyprint source lang-bash"><code>mkdir demo
 cd demo
-npm install hcilab/wams#hello-world-test
+npm install wams-js/wams#hello-world-test
 </code></pre>
 <p>Now, create an <strong>app.js</strong> file. In this file, include WAMS and initialize the application:</p>
 <pre class="prettyprint source lang-javascript"><code>const WAMS = require(&quot;wams&quot;);
@@ -226,7 +220,7 @@ app.listen(9000);
 </code></pre>
 <p>You can substitute <code>const app = new Wams.Application();</code> in your code with the code above to play with different options.</p>
 <h3 id="basics">Basics</h3>
-<p>A WAMS app is made of <strong>items</strong>. There are several predefined items (see in the <a href="https://hcilab.github.io/wams/module-predefined.items.html">code documentation</a>):</p>
+<p>A WAMS app is made of <strong>items</strong>. There are several predefined items (see in the <a href="https://wams-js.github.io/wams/module-predefined.items.html">code documentation</a>):</p>
 <ul>
 <li><code>rectangle</code></li>
 <li><code>square</code></li>
@@ -258,7 +252,7 @@ app.spawn(
   })
 );
 </code></pre>
-<p>Polygons are built using an array of relative points. For a random set of points, you can use <code>randomPoints</code> method from <code>Wams.predefined.utilities</code> (see in <a href="https://hcilab.github.io/wams/module-predefined.utilities.html#.randomPoints">code documentation</a>).</p>
+<p>Polygons are built using an array of relative points. For a random set of points, you can use <code>randomPoints</code> method from <code>Wams.predefined.utilities</code> (see in <a href="https://wams-js.github.io/wams/module-predefined.utilities.html#.randomPoints">code documentation</a>).</p>
 <p>For example:</p>
 <pre class="prettyprint source lang-javascript"><code>const { items, utilities } = WAMS.predefined;
 
@@ -548,7 +542,7 @@ card.owner = 1;
 }
 </code></pre>
 <h3 id="grouped-items">Grouped items</h3>
-<p>Sometimes you would like to spawn several items and then move or drag them together. To do that easily, you can use the <code>createItemGroup</code> method (see in the <a href="https://hcilab.github.io/wams/module-server.Application.html#createItemGroup">code documentation</a>):</p>
+<p>Sometimes you would like to spawn several items and then move or drag them together. To do that easily, you can use the <code>createItemGroup</code> method (see in the <a href="https://wams-js.github.io/wams/module-server.Application.html#createItemGroup">code documentation</a>):</p>
 <pre class="prettyprint source lang-javascript"><code>const items = [];
 
 items.push(
@@ -624,7 +618,7 @@ npm run format
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Sep 23 2023 02:19:28 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Sep 23 2023 02:20:23 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
