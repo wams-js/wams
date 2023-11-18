@@ -32,6 +32,7 @@
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
     "arkit": "^1.6.4",
+    "buffer": "^6.0.3",
     "docdash": "^2.0.2",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
