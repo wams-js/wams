@@ -15,6 +15,7 @@
     "format:check": "prettier --check src tests examples",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "prepare": "npm run build",
     "test": "jest",
     "test:debug": "node inspect $(npm bin)/jest --runInBand"
   },
