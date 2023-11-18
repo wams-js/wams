@@ -156,7 +156,7 @@ To test this on a single computer you could:
 - click and hold to drag the square towards the other browser window
 - you have your first multiscreen app!
 
-![Screenshot of first multiscreen app](./img/multiscreen.png)
+<img width="1440" alt="Screenshot of first multiscreen app" src="https://github.com/wams-js/wams/assets/40647401/44dc303e-0c6e-4c54-bb87-de006408dcfe">
 
 > To try a more complex multi-screen gestures example (gestures that span multiple screens), check out `examples/shared-polygons.js`.
 
