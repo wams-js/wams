@@ -664,7 +664,7 @@ asdf install nodejs <version> # Install the correct version of Node
 nvm install
 ```
 
-**Step #2:** Install dependencies
+**Step #2:** Install dependencies and build client distributables
 
 ```bash
 npm install
