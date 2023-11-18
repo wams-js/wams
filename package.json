@@ -10,11 +10,11 @@
   "scripts": {
     "build": "parcel build",
     "build:debug": "parcel build --no-optimize",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "docs": "jsdoc -c .jsdocrc.json",
     "format": "prettier --write src tests examples",
     "format:check": "prettier --check src tests examples",
-    "docs": "jsdoc -c .jsdocrc.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "jest",
     "test:debug": "node inspect $(npm bin)/jest --runInBand"
   },
